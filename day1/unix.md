@@ -247,7 +247,7 @@ There are some special directories:
 * `.` - the current directory
 * `~` - your home directory
 
-To navigate back up to the parent directory, do
+To navigate t up to the parent directory, do
 `cd ..`.
 
 ```
@@ -1159,7 +1159,16 @@ I wouldn't go overboard with this feature, but
 it's handy sometimes.
 
 ---
+# backticks and arithmetic
 
+We can also use backticks and arithmetic together
+
+```
+~ $ echo My age is $((`date +%Y` - 1993))
+26 (if current year is 2019)
+```
+
+---
 # environment variables
 
 Environment variables are defined by the shell and
